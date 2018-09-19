@@ -1,5 +1,107 @@
 # Changelog
 
+## ☀️ 0.5.0
+
+- ### ✨ Features
+
+  - #### 🍱 Module Support
+
+    - **BREAKING: use correct `package.json` keys for generated JavaScript - [ashleygwilliams], [issue/309] [pull/312]**
+
+      [issue/309]: https://github.com/rustwasm/wasm-pack/issues/309
+      [pull/312]: https://github.com/rustwasm/wasm-pack/pull/312
+
+  - #### 🛠️ New Commands
+
+    - **`wasm-pack init` is now `wasm-pack build` - [csmoe], [issue/188] [pull/216]**
+
+      [csmoe]: https://github.com/csmoe
+      [issue/188]: https://github.com/rustwasm/wasm-pack/issues/188
+      [pull/216]: https://github.com/rustwasm/wasm-pack/pull/216
+
+    - **add new command: `wasm-pack test` - [fitzgen], [pull/271]**
+
+      [pull/271]: https://github.com/rustwasm/wasm-pack/pull/271
+
+    - **add OTP support to `wasm-pack publish` - [mstallmo], [issue/257] [pull/282]**
+
+      [issue/257]: https://github.com/rustwasm/wasm-pack/issues/257
+      [pull/282]: https://github.com/rustwasm/wasm-pack/pull/282
+
+  - #### 🎏 New Flags
+
+    - **support `wasm-bindgen`'s `no-modules` flag - [ashleygwilliams], [issue/317] [pull/327]**
+
+      [issue/317]: https://github.com/rustwasm/wasm-pack/issues/317
+      [pull/327]: https://github.com/rustwasm/wasm-pack/pull/327
+
+    - **`--access` flag for `wasm-pack` publish - [ashleygwilliams], [issue/297] [pull/299]**
+
+      [issue/297]: https://github.com/rustwasm/wasm-pack/issues/297
+      [pull/299]: https://github.com/rustwasm/wasm-pack/pull/299
+
+  - #### ✅ New Checks
+
+    - **coordinating wasm-bindgen versions and installing from binaries for improved speed - [datapup], [issue/146] [pull/244] [pull/324]**
+
+      [datapup]: https://github.com/datapup
+      [issue/146]: https://github.com/rustwasm/wasm-pack/issues/146
+      [pull/244]: https://github.com/rustwasm/wasm-pack/pull/244
+      [pull/324]: https://github.com/rustwasm/wasm-pack/pull/324
+
+    - **enforce `cargo build` with `--lib` - [ashleygwilliams], [issue/303] [pull/330]**
+
+      [issue/303]: https://github.com/rustwasm/wasm-pack/issues/303
+      [pull/330]: https://github.com/rustwasm/wasm-pack/pull/330
+
+  - #### Installers and Releases
+
+    - **Appveyor Windows Pre-Built binaries - [alexcrichton], [issue/147] [pull/301]**
+
+      [alexcrichton]: https://github.com/alexcrichton
+      [issue/147]: https://github.com/rustwasm/wasm-pack/issues/147
+      [pull/301]: https://github.com/rustwasm/wasm-pack/pull/301
+
+    - **new experimental installer - [alexcrichton], [pull/307]**
+
+      [pull/307]: https://github.com/rustwasm/wasm-pack/pull/307
+
+- ### 🤕 Fixes
+
+- ### 🛠️ Maintenance
+
+    - **testing fixture strategy improvements - [fitzgen], [pull/211] [pull/323]**
+
+      [pull/211]: https://github.com/rustwasm/wasm-pack/pull/211
+      [pull/323]: https://github.com/rustwasm/wasm-pack/pull/323
+
+    - **split testing utils into separate files - [csmoe], [issue/231] [pull/216]**
+
+      [issue/231]: https://github.com/rustwasm/wasm-pack/issues/231
+      [pull/216]: https://github.com/rustwasm/wasm-pack/pull/216
+
+    - **update dependencies - [ashleygwilliams], [issue/319] [pull/320]**
+
+      [issue/319]: https://github.com/rustwasm/wasm-pack/issues/319
+      [pull/320]: https://github.com/rustwasm/wasm-pack/pull/320
+
+- ### 📖 Documentation
+
+    - **improve readability of warnings about missing optional fields - [twilco], [pull/296]**
+
+      [twilco]: https://github.com/twilco
+      [pull/296]: https://github.com/rustwasm/wasm-pack/pull/296
+
+    - **update links in README - [alexcrichton], [pull/300]**
+
+      [pull/300]: https://github.com/rustwasm/wasm-pack/pull/300
+
+    - **fix broken links in book by using relative paths - [mstallmo], [issue/325] [pull/328]**
+
+      [mstallmo]: https://github.com/mstallmo
+      [issue/325]: https://github.com/rustwasm/wasm-pack/issues/325
+      [pull/328]: https://github.com/rustwasm/wasm-pack/pull/328
+
 ## ✨ 0.4.2
 
 - #### 🤕 Fixes
