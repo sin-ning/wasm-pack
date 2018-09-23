@@ -3,9 +3,19 @@
 use emoji;
 use error::Error;
 use progressbar::Step;
+use rustc_version::{version, Version};
 use std::path::Path;
 use std::process::Command;
 use PBAR;
+
+pub fn check_rustc_version(step: &Step) -> Result<&str, Error> {
+    let local_version = version()?;
+    let minimum_version = Version::parse("1.30.0")?;
+    if local_version < minimum_version {
+        Error::rustc("Your rustc version must be greater than 1.30.0.")
+    }
+    Ok(&local_version.to_string())
+}
 
 /// Ensure that `rustup` has the `wasm32-unknown-unknown` target installed for
 /// the `nightly` toolchain.
